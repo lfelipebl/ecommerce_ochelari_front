@@ -50,7 +50,7 @@ const Header = () => {
             </div>
             </div>
             <div className='col-5'>
-              <div className='header-uuper-links d-flex align-items-center justify-content-between'>
+              <div className='header-uuper-links d-flex align-items-center justify-content-between gap-10'>
                 <div>
                   <Link className='d-flex align-items-center gap-10'>
                     <img src="images/Favourite.svg" alt="Favourite"></img>

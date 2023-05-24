@@ -1,5 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Marquee from "react-fast-marquee";
+import BlogCard from '../components/BlogCard.js';
+import ProductCard from '../components/ProductCard.js';
+import ProductCardSpecial from '../components/ProductCardSpecial.js';
 
 const Home = () => {
   return (
@@ -95,6 +99,28 @@ const Home = () => {
       </div>
     </section>
 
+
+    {/* WRAPPER NEWS- 5 */}
+    <section className='special-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12 d -flex'>
+            <h3 className='section-heading'>Ofertas</h3>
+            <p className='section-heading-2'>¡Encuentras precios increíbles!</p>
+          </div>
+          <div className='row'>
+            <ProductCardSpecial />
+            <ProductCardSpecial />
+            <ProductCardSpecial />
+            <ProductCardSpecial />
+            <ProductCardSpecial />
+            <ProductCardSpecial />
+          </div>  
+        </div>
+      </div>
+     </section>
+      
+
     {/* WRAPPER - 2 */}
     <section className='home-wrapper-2 py-5'>
       <dev className= 'container-xxl container-wrap-2'>
@@ -104,36 +130,35 @@ const Home = () => {
               <div className='d-flex align-items-center gap-10'>
                 <img src='images/Truck.svg' alt='services' />
                 <div>
-                  <h6>Envíos gratis</h6>
-                  <p className='mb-0'>En pedidos mayores a $500k </p>
+                  <h6>Envíos Gratis</h6>
+                  <p className='mb-0'>En todos tus productos </p>
                 </div>
               </div>
               <div className='d-flex align-items-center gap-10'>
                 <img src='images/Support.svg' alt='services' />
                 <div>
-                  <h6>Soporte 24/7</h6>
+                  <h6>Atención Personalizada</h6>
                   <p className='mb-0'>Compra con un experto</p>
                 </div>
               </div>
               <div className='d-flex align-items-center gap-10'>
                 <img src='images/Offer.svg' alt='services' />
                 <div>
-                  <h6>Precios justos</h6>
-                  <p className='mb-0'>Precio directo de fabrica</p>
+                  <h6>Marcas Excusivas</h6>
+                  <p className='mb-0'>Productos Top Global</p>
                 </div>
               </div>
               <div className='d-flex align-items-center gap-10'>
                 <img src='images/Gift.svg' alt='services' />
                 <div>
-                  <h6>Ofertas sorpresa
-                  </h6>
-                  <p className='mb-0'>Descuentos hasta de un 25%</p>
+                  <h6>Ofertas Sorpresa</h6>
+                  <p className='mb-0'>Descuentos especiales</p>
                 </div>
               </div>
               <div className='d-flex align-items-center gap-10'>
                 <img src='images/Creditcard.svg' alt='services' />
                 <div>
-                  <h6>Pagos seguros</h6>
+                  <h6>Pagos Seguros</h6>
                   <p className='mb-0'>Pagos 100% protegidos</p>
                 </div>
               </div>
@@ -143,9 +168,60 @@ const Home = () => {
       </dev>
     </section>
 
-    {/* WRAPPER - 3 */}
-    <section className='marque-wrapper-3 py-5'>
+    {/* WRAPPER NEWS- 5 */}
+    <section className='featured-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>Productos destacados</h3>
+          </div>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
+      </div>
+     </section>
+
+    {/* WRAPPER MARQUEE- 3 */}
+    <section className='marque-wrapper-3 py-4'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='marquee-inner-wrapper card_wrapper'>
+              <Marquee className='d-flex'>
+                <div className='marquee-div'><img src='images/ARMANI-EXCHANGE.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/EMPORIO-ARMANI.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/KIPLING.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/MICHAEL-KORS.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/OACKLEY.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/POLO-RALPH-LAUREN.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/POLO-RALPH-LAUREN-EYEWEAR.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/RALPH-LAUREN.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/RAYBAN.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/VERSACE.svg' alt='brand' /></div>
+                <div className='marquee-div'><img src='images/VOGUE-EYEWEAR.svg' alt='brand' /></div>
+              </Marquee>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+     {/* WRAPPER NEWS- 4 */}
+     <section className='blog-wrapper py-5 home-wrapper-2'>
+      <div className='container-xxl'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>Noticias y tendencias</h3>
+          </div>
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+        </div>
+      </div>
+     </section>
   </>  
   )
 }

@@ -11,6 +11,9 @@
  --bckg-color-4: #f5f5f7;
  --border-color-1: #393939;
  --color-main-1: #FFC000;
+ --color-text-1: #777777;
+ --color-text-2: #131921;
+ --color-hover-1: #f8c839;
 }
 
 body{
@@ -57,6 +60,26 @@ a{
   border-radius: 15px;
   transition: 0.5s;
 }
+.card_wrapper{
+  background-color: var(--bckg-color-4);
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+
+.section-heading{
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.section-heading-2{
+  font-size: 16px;
+  margin-bottom: 50px;
+  color: var(--color-text-1);
+}
+
+
+
 
 /* Header part*/
 
@@ -220,5 +243,123 @@ footer .input-group-text{
 
 /* Home wrapper 2 ends*/
 
+/* Home wrapper 3 marquee*/
+.marque-wrapper-3 .marquee-inner-wrapper .marquee-div img{
+  box-sizing: inherit;
+  vertical-align: baseline;
+  padding-inline: 15px;
+
+}
+/* Home wrapper 3 marquee ends here*/
 
 
+/* Home blogcard 4 */
+.blog-card{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.blog-card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-content{
+  padding: 15px;
+}
+
+.blog-content .blog-date{
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--color-text-1);
+}
+
+.blog-content h5{
+  font-size: 18px;
+  color: var(--color-text-2);
+}
+
+.blog-content .blog-desc{
+  height: 80px;
+  font-size: 13px;
+  font-weight: 22px;
+  padding-top: 10px;
+  color: var(--color-text-1);
+  word-break:break-all;
+  overflow: hidden;
+}
+
+/* Home blogcard 4 ends here */
+
+
+/* Home Productcard 4 */
+.product-card{
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-card:hover .action-bar{
+  right: 15px;
+
+}
+
+.product-card .product-brand{
+  color: var(--color-main-1);
+}
+
+.product-card .product-reference{
+  font-size: 15px;
+  color: var(--color-text-2);
+}
+
+.product-card .product-price{
+  font-size: 16px;
+  color: var(--color-text-2);
+}
+
+.action-bar{
+  top:21%;
+  right: -24px;
+  color: transparent;
+  transition: 0.3s;
+}
+
+.action-bar img:hover,
+.product-whislist img:hover{
+  background-color: var(--color-hover-1);
+  border-radius: 50%;
+  transition: 0.s;
+  transition: 0.4s;
+}
+
+.product-whislist{
+  top:7%;
+  right: 15px; 
+}
+
+
+/* Home Productcard 4  ends here*/
+
+
+/* Home Productcard especial*/
+
+.special-product-card{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.special-product-card img{
+  width: 255px;
+  height: 130px;  
+}
+
+.product-price strike{
+  color:red;
+}
+/* Home Productcard especial  ends here*/
