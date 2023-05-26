@@ -34,8 +34,8 @@ const Footer = () => {
         <div className='row align-items-center justify-content-end mt-3'>
           <div className='col-7'>
             <p className='text-white '>* Acepta <span> </span> 
-              <Link className='text-white text-decoration-underline' >Términos y condiciones</Link> y<span> </span> 
-              <Link className='text-white text-decoration-underline' >Política de tratamiento de datos</Link></p>
+              <Link to="/" className='text-white text-decoration-underline' >Términos y condiciones</Link> y<span> </span> 
+              <Link to="/" className='text-white text-decoration-underline' >Política de tratamiento de datos</Link></p>
           </div>
         </div>
       </div>
@@ -48,9 +48,9 @@ const Footer = () => {
           <div className='col-3'>
             <h5 className='text-white'>Contáctanos</h5>
             <div className='footer-links d-flex flex-column'>
-                <Link className='text-white py-2 mb-1'>Servicio al cliente</Link>
-                <a href='https://wa.me/573504504073' target='_blank' className='text-white py-2 mb-1'>Chatea con nostros</a>
-                <a href='mailto:' target='_blank' className='text-white py-2 mb-1'>servicioalcliente@och.com</a>
+                <Link to='/contact' className='text-white py-2 mb-1'>Servicio al cliente</Link>
+                <a href='https://wa.me/573504504073' className='text-white py-2 mb-1'>Chatea con nostros</a>
+                <a href='mailto:' className='text-white py-2 mb-1'>servicioalcliente@och.com</a>
             </div>
           </div>
           <div className='col-3'>
@@ -64,9 +64,9 @@ const Footer = () => {
           <div className='col-2'>
             <h5 className='text-white'>Accesos</h5>
             <div className='footer-links d-flex flex-column'>
-              <Link className='text-white py-2 mb-1'>Home</Link>
-              <Link className='text-white py-2 mb-1'>Store</Link>
-              <Link className='text-white py-2 mb-1'>Servicio al cliente</Link>
+              <Link to='/' className='text-white py-2 mb-1'>Home</Link>
+              <Link to='/store'className='text-white py-2 mb-1'>Store</Link>
+              <Link to='/contact' contact className='text-white py-2 mb-1'>Servicio al cliente</Link>
             </div>
           </div>
           <div className='col-2'>
@@ -81,13 +81,13 @@ const Footer = () => {
           <div className='col-2'>
             <h5 className='text-white'>Redes sociales</h5>
             <div className='social-icons d-flex align-items-center gap-15'>
-              <a href=''>
+              <a href='/'>
                 <img src='images/Whatsapp.svg' alt='social icons'/>
               </a>
-              <a href=''>
+              <a href='/'>
                 <img src='images/Instagram.svg' alt='social icons'/>
               </a>
-              <a href=''>
+              <a href='/'>
                 <img src='images/Facebook.svg' alt='social icons'/>
               </a>
             </div>

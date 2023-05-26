@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className='col-6'>
               <div>
-                  <Link className='d-flex align-items-center justify-content-end gap-10'>
+                  <Link to='/contact' className='d-flex align-items-center justify-content-end gap-10'>
                     <img src="images/Phone.svg" alt="Favourite"></img>
                     <p className='mb-0 text-white'> Servicio al cliente</p>
                   </Link>
@@ -30,7 +30,7 @@ const Header = () => {
           <div className='row align-items-center'>
             <div className='col-2 align-items-center'>
               <h1>
-                <Link className='text-logo'>OCH</Link>
+                <Link to='/' className='text-logo'>OCH</Link>
               </h1>
             </div>
             <div className='col-5'>
@@ -52,13 +52,13 @@ const Header = () => {
             <div className='col-5'>
               <div className='header-uuper-links d-flex align-items-center justify-content-between gap-10'>
                 <div>
-                  <Link className='d-flex align-items-center gap-10'>
+                  <Link to='/wishlist' className='d-flex align-items-center gap-10'>
                     <img src="images/Favourite.svg" alt="Favourite"></img>
                     <p className='mb-0 text-white'> Favoritos <br />Lista de deseos</p>
                   </Link>
                 </div>
                 <div>
-                  <Link className='d-flex align-items-center gap-10'>
+                  <Link to='/login' className='d-flex align-items-center gap-10'>
                     <img src="images/Login.svg" alt="Login"></img>
                     <p className='mb-0 text-white'> Inicio de sesión <br />Mi cuenta</p>
                   </Link>
@@ -103,9 +103,9 @@ const Header = () => {
                 <div className='menu-links'>
                   <div className='d-flex align-items-center gap-15'>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/">Store</NavLink>
+                    <NavLink to="/store">Store</NavLink>
                     <NavLink to="/">Marcas</NavLink>
-                    <NavLink to="/">New-in</NavLink>
+                    <NavLink to="/new-in">Blog</NavLink>
                     <NavLink to="/">Ofertas</NavLink>
                   </div>
                 </div>

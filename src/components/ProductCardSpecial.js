@@ -28,7 +28,7 @@ const ProductCardSpecial = () => {
                         <span><strike>$ 930,000</strike><br />$ 730,000</span>
                     </p>
 
-                    <Link className='button'>Comprar</Link>
+                    <Link to="/" className='button'>Comprar</Link>
 
                 </div>
             </div>

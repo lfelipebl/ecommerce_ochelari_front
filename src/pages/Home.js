@@ -4,10 +4,14 @@ import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard.js';
 import ProductCard from '../components/ProductCard.js';
 import ProductCardSpecial from '../components/ProductCardSpecial.js';
+import Meta from '../components/Meta.js';
 
 const Home = () => {
   return (
     <>
+
+    <Meta title={'Home'}/>
+
      {/* WRAPPER - 1 */}
     <section className='home-wrapper-1 py-5'>
       <div className='container-xxl'>
@@ -215,11 +219,12 @@ const Home = () => {
           <div className='col-12'>
             <h3 className='section-heading'>Noticias y tendencias</h3>
           </div>
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
         </div>
+        <div className='row'>
+          <div className='col-3'><BlogCard /></div>
+          <div className='col-3'><BlogCard /></div>
+          <div className='col-3'><BlogCard /></div>
+          <div className='col-3'><BlogCard /></div>        </div>
       </div>
      </section>
   </>  

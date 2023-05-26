@@ -43,6 +43,7 @@ a{
   gap: 30px;
 }
 
+
 .button{
   background-color: var(--color-main-1);
   color: white;
@@ -50,6 +51,7 @@ a{
   padding: 10px 30px;
   border-radius: 15px;
   transition: 0.5s;
+  border-color: transparent;
 }
 
 .button:hover{
@@ -292,6 +294,12 @@ footer .input-group-text{
   overflow: hidden;
 }
 
+
+.single-blog-card{
+  
+}
+
+
 /* Home blogcard 4 ends here */
 
 
@@ -301,11 +309,11 @@ footer .input-group-text{
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 
 .product-card:hover .action-bar{
   right: 15px;
-
 }
 
 .product-card .product-brand{
@@ -327,6 +335,12 @@ footer .input-group-text{
   right: -24px;
   color: transparent;
   transition: 0.3s;
+}
+
+.product-card .short-description{
+  font-size: 13px;
+  color: var(--color-text-1);
+  margin-right: 40px;
 }
 
 .action-bar img:hover,
@@ -363,3 +377,245 @@ footer .input-group-text{
   color:red;
 }
 /* Home Productcard especial  ends here*/
+
+
+/* BreadCrumb */
+
+.text-breadcrumb{
+  color: var(--color-text-1);
+  text-decoration: none;
+}
+
+/* BreadCrumb ends here*/
+
+
+
+/* Store */
+
+.filter-card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.filter-title{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-text-2);
+}
+
+.filter-card .form-check{
+  list-style-type: none;
+  font-size: 13px;
+  color: var(--color-text-1);
+  cursor: pointer;
+}
+
+.filter-subtitle{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-2);
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+.filter-card .form-check-input:focus{
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter-card .form-check-input:checked{
+  background-color: var(--color-hover-1);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter-price{
+  font-size: 10px;
+}
+
+.colors{
+  list-style-type: none;
+}
+
+.colors li{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.filter-card span{
+  background-color: rgba(205, 205, 205, 0.297);
+}
+
+.filter-sort-grid{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.grid img{
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: rgba(205, 205, 205, 0.297);
+  cursor: pointer;
+}
+
+.totalProducts{
+  color: var(--color-text-1);
+}
+
+.gr-4{
+  width: 32%;
+}
+
+.gr-3{
+  width: 24%;
+}
+/*--*/
+.gr-12{
+  width: 100%;
+}
+
+.gr-12 .product-card{
+  display: flex;
+  gap: 20px;
+}
+
+.gr-12 .product-card .product-img{
+  width: 270px;
+}
+
+.gr-12 .action-bar{
+  top:32%;
+}
+/*--*/
+
+.gr-6{
+  width: 49.484%;
+}
+
+.gr-6 .product-img{
+  width: 100%;
+}
+
+.gr-6 .product-img img{
+  margin: auto;
+  display: block;
+}
+
+/* Store ends here*/
+
+
+/* Contact*/
+
+.contact-wrapper{
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+
+.contact-wrapper > div {
+  width: 80%;
+}
+
+.contact-title{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.contact-wrapper form .form-control{
+  background-color: var(--bckg-color-4);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.contact-wrapper ul{
+  list-style-type: none;
+}
+
+.contact-wrapper a,
+.contact-wrapper ul{
+  text-decoration: none;
+  color: var(--color-text-1);
+
+}
+
+.contact-wrapper .text-logo{
+  color: var(--color-main-1);
+  font-size: 40px;
+}
+/* Contact ends here*/
+
+
+
+/* wishlist*/
+
+.wishlist-card .cross{
+  top:12px;
+  right: 10px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+/* wishlist ends here*/
+
+
+/* Login*/
+
+.login-card{
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.login-card h3{
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-text-1);
+}
+
+.login-card .form-control{
+  height: 50px;
+  background-color: var(--bckg-color-4);
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+} 
+
+.login-card .pass{
+  color: var(--color-text-1);
+  font-weight: 500;
+}
+
+.login-card .signup:hover{
+  background-color: var(--color-main-1);
+  color: white;
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  transition: 0.5s;
+  border-color: transparent;
+}
+
+.login-card .signup{
+  background-color: var(--bckg-color-2);
+  color: white;
+  transition: 0.5s;
+}
+
+.text-login-1{
+  color: var(--color-text-1);
+}
+/* Login ends here*/
