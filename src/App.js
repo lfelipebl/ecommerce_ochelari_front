@@ -12,6 +12,7 @@ import Login from './pages/Login.js';
 import ForgotPassword from './pages/ForgotPassword.js';
 import Signup from './pages/Signup.js';
 import SingleNewin from './pages/SingleNewin';
+import SingleProduct from './pages/SingleProduct';
 
 function App() {
   return <>
@@ -22,6 +23,7 @@ function App() {
           <Route path="about" element={<About />}/>
           <Route path="contact" element={<Contact />}/>
           <Route path="store" element={<Store />}/>
+          <Route path="store/product/:id" element={<SingleProduct />}/>
           <Route path="new-in" element={<Newin />}/>
           <Route path="new-in/:id" element={<SingleNewin />}/>
           <Route path="wishlist" element={<Wishlist />}/>

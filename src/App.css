@@ -14,6 +14,7 @@
  --color-text-1: #777777;
  --color-text-2: #131921;
  --color-hover-1: #f8c839;
+ --color-form-1: #dedede;
 }
 
 body{
@@ -31,6 +32,11 @@ a{
   border-color: inherit;
 }
 
+
+.gap-5{
+  gap: 5px;
+}
+
 .gap-10{
   gap: 10px;
 }
@@ -46,7 +52,7 @@ a{
 
 .button{
   background-color: var(--color-main-1);
-  color: white;
+  color: var(--color-text-1);
   font-size: 14px;
   padding: 10px 30px;
   border-radius: 15px;
@@ -85,12 +91,16 @@ a{
 
 /* Header part*/
 
+.header-uuper-links .logout{
+  font-size: 14px;
+  color: var(--color-main-1);
+}
 .header-top-strip{
   border-bottom: 1px solid var(--border-color-1);
   background-color: var(--bckg-color-1);
 }
 
-.header-top-strip .row p{
+.header-top-strip .row .header-top-p{
   font-size: 12px;
 }
 
@@ -295,9 +305,22 @@ footer .input-group-text{
 }
 
 
-.single-blog-card{
-  
+.single-blog-card h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-2);
 }
+
+.single-blog-card a{
+  font-size: 15px;
+  color: var(--color-text-1);
+  margin-bottom: 20px;
+}
+
+.single-blog-card p{
+  color: var(--color-text-1);
+}
+
 
 
 /* Home blogcard 4 ends here */
@@ -594,6 +617,7 @@ footer .input-group-text{
   border-color: transparent;
 } 
 
+
 .login-card .pass{
   color: var(--color-text-1);
   font-weight: 500;
@@ -619,3 +643,77 @@ footer .input-group-text{
   color: var(--color-text-1);
 }
 /* Login ends here*/
+
+
+/* signup*/
+.instructions {
+  font-size: 12px;
+  border-radius: 0.5rem;
+  background: var(--bckg-color-3);
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.line {
+  display: inline-block;
+}
+
+.login-wrapper .form-control {
+  background: var(--color-form-1);
+}
+
+.login-wrapper h6{
+  font-size: 13px;
+  color: var(--color-text-1);
+}
+
+.login-wrapper .alert-signup{
+  border: 10%;
+}
+
+.login-wrapper .success{
+  font-size: 24px;
+  text-align: center;
+  margin: 2% 4% 1% 4% ;
+  color: var(--color-text-2);
+} 
+
+.login-wrapper .form-date{
+  color: var(--color-text-1);
+  cursor: pointer;
+}
+
+.icon{
+  cursor: pointer;
+}
+
+/* signup ends here*/

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='row align-items-center'>
           <div className='col-5'>
             <div className='footer-top-data d-flex gap-15 align-items-center'>
-              <img src='images/Newsletter.svg'  alt='Newsletter'/>
+              <img src='/images/Newsletter.svg'  alt='Newsletter'/>
               <h4 className='mb-0 text-white'>Únete a OCH y mantente al corriente</h4>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Footer = () => {
             <div className='footer-links d-flex flex-column'>
               <Link to='/' className='text-white py-2 mb-1'>Home</Link>
               <Link to='/store'className='text-white py-2 mb-1'>Store</Link>
-              <Link to='/contact' contact className='text-white py-2 mb-1'>Servicio al cliente</Link>
+              <Link to='/contact' className='text-white py-2 mb-1'>Servicio al cliente</Link>
             </div>
           </div>
           <div className='col-2'>
@@ -82,13 +82,13 @@ const Footer = () => {
             <h5 className='text-white'>Redes sociales</h5>
             <div className='social-icons d-flex align-items-center gap-15'>
               <a href='/'>
-                <img src='images/Whatsapp.svg' alt='social icons'/>
+                <img src='/images/Whatsapp.svg' alt='social icons'/>
               </a>
               <a href='/'>
-                <img src='images/Instagram.svg' alt='social icons'/>
+                <img src='/images/Instagram.svg' alt='social icons'/>
               </a>
               <a href='/'>
-                <img src='images/Facebook.svg' alt='social icons'/>
+                <img src='/images/Facebook.svg' alt='social icons'/>
               </a>
             </div>
           </div> 

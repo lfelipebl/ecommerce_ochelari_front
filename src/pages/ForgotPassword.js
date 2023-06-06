@@ -20,7 +20,7 @@ const ForgotPassword = () => {
                                 <div><input type='email' name="email" placeholder='Email' className='form-control'></input></div>
                                 <div className='mt-2 d-flex flex-column justify-content-center gap-15 align-items-center'>
                                     <button className='button'>Enviar</button>
-                                    <Link class='text-login-1' to="/login">Cancelar</Link>
+                                    <Link className='text-login-1' to="/login">Cancelar</Link>
                                 </div>    
                             </form>
                         </div>

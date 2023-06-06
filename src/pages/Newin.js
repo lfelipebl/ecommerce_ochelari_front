@@ -6,8 +6,8 @@ import BlogCard from '../components/BlogCard.js';
 const Newin = () => {
   return (
     <>
-        <Meta title={'New-in'}/>
-        <BreadCrumb title='New-in'/>
+        <Meta title={'Noticias'}/>
+        <BreadCrumb title='Noticias'/>
 
         <div className='new-wrapper home-wrapper-2 py-3'>
             <div className='container-xxl'>

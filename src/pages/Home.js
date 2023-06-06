@@ -127,7 +127,7 @@ const Home = () => {
 
     {/* WRAPPER - 2 */}
     <section className='home-wrapper-2 py-5'>
-      <dev className= 'container-xxl container-wrap-2'>
+      <div className= 'container-xxl container-wrap-2'>
         <div className='row'>
           <div className='col-12'>
             <div className='d-flex align-items-center justify-content-between'>
@@ -169,7 +169,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </dev>
+      </div>
     </section>
 
     {/* WRAPPER NEWS- 5 */}
